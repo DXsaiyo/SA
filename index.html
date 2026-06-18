@@ -48,6 +48,10 @@ body{
   text-rendering:optimizeLegibility;
 }
 h1,h2,h3,h4{color:var(--tx-0);font-weight:900;line-height:1.35;letter-spacing:.005em;word-break:keep-all;overflow-wrap:normal}
+
+.hero-line{display:block;white-space:nowrap}
+.lead-break{display:block}
+.lead-keep{white-space:nowrap}
 a{color:inherit;text-decoration:none}
 button,input,textarea,select{font:inherit}
 section{position:relative}
@@ -100,7 +104,7 @@ section{position:relative}
 /* hero */
 .hero{padding:162px 0 96px;overflow:hidden;min-height:760px;display:flex;align-items:center}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);gap:70px;align-items:center;text-align:left}
-.hero h1{font-size:clamp(34px,5.35vw,64px);letter-spacing:-.035em;margin:22px 0 24px;line-height:1.28}
+.hero h1{font-size:clamp(34px,5.1vw,62px);letter-spacing:-.055em;margin:22px 0 24px;line-height:1.28}
 .hero .sub{font-size:clamp(15px,1.65vw,17px);max-width:610px;color:var(--tx-1);margin:0 0 34px 0;line-height:2.05}
 .hero-cta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:flex-start}
 .hero-note{margin-top:16px;color:var(--tx-3);font-size:13px}
@@ -158,7 +162,7 @@ footer{padding:42px 0;border-top:1px solid var(--bd);background:var(--bg-0)}.foo
   .nav-links{display:none}.burger{display:flex}.hero{padding:132px 0 82px;min-height:auto}.hero-grid,.about-grid,.method-wrap{grid-template-columns:1fr;gap:42px}.hero-orbit{min-height:280px}.hero-orbit svg{width:min(310px,100%)}.grid-4{grid-template-columns:repeat(2,1fr)}.grid-3,.grid-2{grid-template-columns:1fr 1fr}.about-visual{order:2}.about-copy{order:1}.foot-inner{align-items:flex-start}.foot-links{align-items:flex-start}
 }
 @media(max-width:640px){
-  body{letter-spacing:.01em}.wrap{padding:0 20px}.sec-pad{padding:68px 0}.hero{padding:118px 0 64px}.hero-grid{text-align:left}.hero h1{font-size:clamp(34px,11.4vw,43px);line-height:1.38;letter-spacing:-.045em}.hero .sub{font-size:14.5px;line-height:2}.hero-cta{display:grid;grid-template-columns:1fr;gap:12px}.btn{width:100%;padding:15px 18px}.hero-meta{grid-template-columns:repeat(3,1fr);gap:8px}.meta-card{padding:8px 8px}.meta-card b{font-size:22px}.meta-card span{font-size:10.5px}.hero-orbit{min-height:220px;margin-top:8px}.hero-orbit svg{width:230px}.sec-head h2,.about-copy h2{font-size:clamp(27px,8.2vw,34px);line-height:1.45}.grid-3,.grid-4,.grid-2,.about-points{grid-template-columns:1fr}.card{padding:24px 22px;border-radius:18px}.card h3{font-size:17px}.about-visual{display:none}.tl-item{padding-left:58px}.timeline::before{left:18px}.tl-dot{left:4px}.faq-q{padding:20px 20px;font-size:15px}.final-card{border-radius:24px}.foot-links{gap:10px}.mobile-menu.open{display:flex}
+  body{letter-spacing:.01em}.wrap{padding:0 20px}.sec-pad{padding:68px 0}.hero{padding:118px 0 64px}.hero-grid{text-align:left}.hero h1{font-size:clamp(30px,9.2vw,40px);line-height:1.35;letter-spacing:-.055em}.hero .sub{font-size:14.5px;line-height:2}.hero-cta{display:grid;grid-template-columns:1fr;gap:12px}.btn{width:100%;padding:15px 18px}.hero-meta{grid-template-columns:repeat(3,1fr);gap:8px}.meta-card{padding:8px 8px}.meta-card b{font-size:22px}.meta-card span{font-size:10.5px}.hero-orbit{min-height:220px;margin-top:8px}.hero-orbit svg{width:230px}.sec-head h2,.about-copy h2{font-size:clamp(27px,8.2vw,34px);line-height:1.45}.grid-3,.grid-4,.grid-2,.about-points{grid-template-columns:1fr}.card{padding:24px 22px;border-radius:18px}.card h3{font-size:17px}.about-visual{display:none}.tl-item{padding-left:58px}.timeline::before{left:18px}.tl-dot{left:4px}.faq-q{padding:20px 20px;font-size:15px}.final-card{border-radius:24px}.foot-links{gap:10px}.mobile-menu.open{display:flex}
 }
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.float,.spin,.spin-rev,.pulse{animation:none}}
@@ -204,7 +208,7 @@ footer{padding:42px 0;border-top:1px solid var(--bd);background:var(--bg-0)}.foo
     <div class="hero-grid">
       <div class="reveal in">
         <span class="eyebrow">スーパーアシスタント 5日間集中研修</span>
-        <h1>AIを<span class="grad-text">“相棒”</span>にして、<br>これからの仕事で<br><span class="grad-text">選ばれる人材</span>へ。</h1>
+        <h1><span class="hero-line">AIを<span class="grad-text">“相棒”</span>にして、</span><span class="hero-line">これからの仕事で</span><span class="hero-line"><span class="grad-text">選ばれる人材</span>へ。</span></h1>
         <p class="sub">生成AIを単なる便利ツールではなく、思考の鏡・実践の練習相手として活用。機転力、対人対応力、プレゼン力、ストレス適応力を鍛え、AI時代に活躍できる人材を目指します。いきなり応募ではなく、まずはカジュアルに話を聞くところから始められます。</p>
         <div class="hero-cta">
           <a href="https://www.f-ship.jp/inquiry/" target="_blank" rel="noopener" class="btn btn-primary">カジュアルに説明を聞いてみる<span class="arrow">→</span></a>
@@ -310,7 +314,7 @@ footer{padding:42px 0;border-top:1px solid var(--bd);background:var(--bg-0)}.foo
     <div class="sec-head center reveal">
       <span class="eyebrow">Core Stance</span>
       <h2>現場で頼られる人になるための、4つの力</h2>
-      <p class="lead">AI時代に必要なのは、ツール操作だけではありません。仕事の目的を読み、相手に伝え、想定外にも対応する力です。</p>
+      <p class="lead">AI時代に必要なのは、ツール操作だけではありません。<span class="lead-break">仕事の目的を読み、相手に伝え、</span><span class="lead-break">想定外にも対応する力です。</span></p>
     </div>
     <div class="grid-4">
       <div class="card reveal"><span class="kicker">01</span><h3>機転力</h3><p>言われたことだけで止まらず、目的から逆算して先回りする力を鍛えます。</p></div>
@@ -399,7 +403,7 @@ footer{padding:42px 0;border-top:1px solid var(--bd);background:var(--bg-0)}.foo
     </div>
     <div class="grid-3">
       <div class="card reveal"><h3>AIを仕事に活かしたい方</h3><p>ChatGPTを触ったことはあるが、実務でどう使うかを学びたい方。</p></div>
-      <div class="card reveal"><h3><span class="line">事務・営業事務・</span><span class="line">アシスタント経験を活かしたい方</span></h3><p>これまでの調整力やサポート経験を、AI時代の強みに変えたい方。</p></div>
+      <div class="card reveal"><h3>事務・営業事務・アシスタント経験を活かしたい方</h3><p>これまでの調整力やサポート経験を、AI時代の強みに変えたい方。</p></div>
       <div class="card reveal"><h3>バックオフィスからDX領域に挑戦したい方</h3><p>業務改善、DXサポート、ITサポートなど、新しい選択肢を知りたい方。</p></div>
       <div class="card reveal"><h3>自分の市場価値を高めたい方</h3><p>ただの作業者ではなく、考えて動ける人材を目指したい方。</p></div>
       <div class="card reveal"><h3>将来のキャリアが少し不安な方</h3><p>AIが当たり前になる時代に、今の経験をどう伸ばすか相談したい方。</p></div>
